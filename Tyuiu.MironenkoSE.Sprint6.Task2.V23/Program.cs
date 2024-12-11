@@ -1,4 +1,4 @@
-namespace Tyuiu.MironenkoSE.Sprint6.Task2.V29
+namespace Tyuiu.MironenkoSE.Sprint6.Task2.V23
 {
     internal static class Program
     {
