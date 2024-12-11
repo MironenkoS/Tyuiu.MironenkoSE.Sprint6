@@ -15,7 +15,7 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task1.V25.Lib
                 int z = (2 * x - 2);
                 if (z == 0)
                 {
-                    valueArray[count] = 0;
+                    valueArray[count] = -4.47;
                 }
                 else
                 {
