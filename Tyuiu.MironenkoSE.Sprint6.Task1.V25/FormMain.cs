@@ -51,14 +51,6 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task1.V25
             }
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+ 
     }
 }

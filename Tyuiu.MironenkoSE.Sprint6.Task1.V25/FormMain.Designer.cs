@@ -83,8 +83,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBoxVarB_LVA);
-            this.groupBox2.Controls.Add(this.textBoxVarA_LVA);
+            this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
@@ -92,10 +91,12 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Условие";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.textBoxVarA_LVA);
+            this.groupBox3.Controls.Add(this.textBoxVarB_LVA);
             this.groupBox3.Location = new System.Drawing.Point(12, 351);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(320, 87);
@@ -115,14 +116,14 @@
             // 
             // textBoxVarA_LVA
             // 
-            this.textBoxVarA_LVA.Location = new System.Drawing.Point(6, 83);
+            this.textBoxVarA_LVA.Location = new System.Drawing.Point(21, 42);
             this.textBoxVarA_LVA.Name = "textBoxVarA_LVA";
             this.textBoxVarA_LVA.Size = new System.Drawing.Size(100, 20);
             this.textBoxVarA_LVA.TabIndex = 0;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(205, 35);
+            this.textBox4.Location = new System.Drawing.Point(116, 202);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(81, 10);
@@ -130,7 +131,7 @@
             // 
             // textBoxVarB_LVA
             // 
-            this.textBoxVarB_LVA.Location = new System.Drawing.Point(186, 83);
+            this.textBoxVarB_LVA.Location = new System.Drawing.Point(177, 42);
             this.textBoxVarB_LVA.Name = "textBoxVarB_LVA";
             this.textBoxVarB_LVA.Size = new System.Drawing.Size(100, 20);
             this.textBoxVarB_LVA.TabIndex = 1;
