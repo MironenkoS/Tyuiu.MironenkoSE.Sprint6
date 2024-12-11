@@ -32,15 +32,14 @@
             this.buttonD = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxAnswer_LVA = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBoxAnswer_LVA = new System.Windows.Forms.TextBox();
             this.textBoxVarA_LVA = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBoxVarB_LVA = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -81,17 +80,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Вывод данных";
             // 
+            // textBoxAnswer_LVA
+            // 
+            this.textBoxAnswer_LVA.BackColor = System.Drawing.SystemColors.Control;
+            this.textBoxAnswer_LVA.Font = new System.Drawing.Font("Consolas", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxAnswer_LVA.Location = new System.Drawing.Point(6, 51);
+            this.textBoxAnswer_LVA.Multiline = true;
+            this.textBoxAnswer_LVA.Name = "textBoxAnswer_LVA";
+            this.textBoxAnswer_LVA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBoxAnswer_LVA.Size = new System.Drawing.Size(203, 349);
+            this.textBoxAnswer_LVA.TabIndex = 3;
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(560, 333);
-            this.groupBox2.TabIndex = 4;
+            this.groupBox2.Size = new System.Drawing.Size(203, 155);
+            this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Условие";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // groupBox3
             // 
@@ -104,22 +110,19 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ввод данных";
             // 
-            // textBoxAnswer_LVA
-            // 
-            this.textBoxAnswer_LVA.Location = new System.Drawing.Point(17, 39);
-            this.textBoxAnswer_LVA.Multiline = true;
-            this.textBoxAnswer_LVA.Name = "textBoxAnswer_LVA";
-            this.textBoxAnswer_LVA.Size = new System.Drawing.Size(168, 345);
-            this.textBoxAnswer_LVA.TabIndex = 0;
-            this.textBoxAnswer_LVA.Text = "1";
-            this.textBoxAnswer_LVA.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
             // textBoxVarA_LVA
             // 
             this.textBoxVarA_LVA.Location = new System.Drawing.Point(21, 42);
             this.textBoxVarA_LVA.Name = "textBoxVarA_LVA";
             this.textBoxVarA_LVA.Size = new System.Drawing.Size(100, 20);
             this.textBoxVarA_LVA.TabIndex = 0;
+            // 
+            // textBoxVarB_LVA
+            // 
+            this.textBoxVarB_LVA.Location = new System.Drawing.Point(177, 42);
+            this.textBoxVarB_LVA.Name = "textBoxVarB_LVA";
+            this.textBoxVarB_LVA.Size = new System.Drawing.Size(100, 20);
+            this.textBoxVarB_LVA.TabIndex = 1;
             // 
             // textBox4
             // 
@@ -129,21 +132,13 @@
             this.textBox4.Size = new System.Drawing.Size(81, 10);
             this.textBox4.TabIndex = 2;
             // 
-            // textBoxVarB_LVA
-            // 
-            this.textBoxVarB_LVA.Location = new System.Drawing.Point(177, 42);
-            this.textBoxVarB_LVA.Name = "textBoxVarB_LVA";
-            this.textBoxVarB_LVA.Size = new System.Drawing.Size(100, 20);
-            this.textBoxVarB_LVA.TabIndex = 1;
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(326, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(194, 270);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // FormMain
             // 
@@ -160,8 +155,6 @@
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
