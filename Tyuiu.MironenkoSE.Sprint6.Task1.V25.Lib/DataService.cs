@@ -19,7 +19,7 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task1.V25.Lib
                 }
                 else
                 {
-                    y = (((5 * x + 2.5) / (Math.Sin(x) - 2) + 2));
+                    y = (((5 * x + 2.5) / (Math.Sin(x) - 2) + 1));
                     valueArray[count] = Math.Round(y, 2);
                 }
                 count++;
