@@ -1,3 +1,6 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+
 namespace Tyuiu.MironenkoSE.Sprint6.Task5.V6.Test
 {
     [TestClass]
