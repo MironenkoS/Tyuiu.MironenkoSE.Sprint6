@@ -44,7 +44,7 @@
             this.groupBoxCondition_DDA.SuspendLayout();
             this.panelOutPut_DDA.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_DDA)).BeginInit();
+           
             this.panelChart_DDA.SuspendLayout();
             
             this.SuspendLayout();
@@ -139,20 +139,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Вывод данных:";
             // 
-            // dataGridViewResult_DDA
-            // 
-            this.dataGridViewResult_DDA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewResult_DDA.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewResult_DDA.Location = new System.Drawing.Point(3, 18);
-            this.dataGridViewResult_DDA.Name = "dataGridViewResult_DDA";
-            this.dataGridViewResult_DDA.RowHeadersVisible = false;
-            this.dataGridViewResult_DDA.RowHeadersWidth = 51;
-            this.dataGridViewResult_DDA.RowTemplate.Height = 24;
-            this.dataGridViewResult_DDA.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridViewResult_DDA.Size = new System.Drawing.Size(243, 666);
-            this.dataGridViewResult_DDA.TabIndex = 0;
-            this.dataGridViewResult_DDA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewResult_DDA_CellContentClick);
-            // 
+            
             // panelChart_DDA
             // 
           
@@ -174,13 +161,13 @@
             this.Controls.Add(this.panelTask_DDA);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Спринт 6 | Таск 5 | Вариант 6 | Дёмин Д. А.";
+            this.Text = "Спринт 6 | Таск 5 | Вариант 6 |";
             this.panelTask_DDA.ResumeLayout(false);
             this.groupBoxCondition_DDA.ResumeLayout(false);
             this.groupBoxCondition_DDA.PerformLayout();
             this.panelOutPut_DDA.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_DDA)).EndInit();
+           
             this.panelChart_DDA.ResumeLayout(false);
             
             this.ResumeLayout(false);
