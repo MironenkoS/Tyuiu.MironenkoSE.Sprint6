@@ -14,7 +14,6 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task5.V6.Lib
                     len++;
                 }
             }
-
             double[] numsArray = new double[len];
 
             int index = 0;
@@ -23,13 +22,12 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task5.V6.Lib
                 string line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    numsArray[index] = Convert.ToDouble(line);
+                    numsArray[index] = Math.Round(Convert.ToDouble(line), 3);
                     index++;
                 }
             }
 
-            numsArray = numsArray.Where(val => val > 0).ToArray();
-
+            numsArray = numsArray.Where(val => val % 3 == 0).ToArray();
             return numsArray;
         }
     }
