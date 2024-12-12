@@ -9,56 +9,24 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task5.V6.Lib
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-
-                while ((line = reader.ReadLine()) != null)
+                while ((line = reader.ReadLine()!) != null)
                 {
                     len++;
                 }
-
             }
 
             double[] numsArray = new double[len];
             int index = 0;
-            using (StreamReader reader = new StreamReader(path))
+            using (StreamReader reader2 = new StreamReader(path))
             {
                 string line;
-                while ((line = reader.ReadLine()) != null)
+                while ((line = reader2.ReadLine()!) != null)
                 {
-
                     numsArray[index] = Convert.ToDouble(line);
                     index++;
                 }
             }
-
-
-            using (StreamReader reader = new StreamReader(path))
-            {
-                string line;
-                double y;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    string[] arr = line.Split(' ');
-                    foreach (string value2 in arr)
-                    {
-                        bool check = false;
-                        foreach (char tempchar in value2)
-                        {
-                            if (tempchar == '.' || tempchar == ',')
-                            {
-                                check = true;
-                            }
-                        }
-                        if (check)
-                        {
-                            continue;
-                        }
-                        double value = Convert.ToInt32(value2);
-                        y = Math.Round(value, 3);
-                    }
-                }
-            }
-
-            numsArray = numsArray.Where(n => n % 5 == 0).ToArray();
+            numsArray = numsArray.Where(val => val >= 10).ToArray();
             return numsArray;
         }
     }
