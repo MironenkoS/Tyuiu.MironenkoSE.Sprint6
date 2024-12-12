@@ -37,8 +37,7 @@
             this.buttonOpenFile_DDA = new System.Windows.Forms.Button();
             this.buttonDone_DDA = new System.Windows.Forms.Button();
             this.panelOutPut_DDA = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridViewResult_DDA = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();          
             this.panelChart_DDA = new System.Windows.Forms.Panel();
             
             this.panelTask_DDA.SuspendLayout();
@@ -47,7 +46,7 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_DDA)).BeginInit();
             this.panelChart_DDA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartResult_DDA)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // panelTask_DDA
@@ -156,7 +155,7 @@
             // 
             // panelChart_DDA
             // 
-            this.panelChart_DDA.Controls.Add(this.chartResult_DDA);
+          
             this.panelChart_DDA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChart_DDA.Location = new System.Drawing.Point(249, 139);
             this.panelChart_DDA.Name = "panelChart_DDA";
@@ -183,7 +182,7 @@
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResult_DDA)).EndInit();
             this.panelChart_DDA.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartResult_DDA)).EndInit();
+            
             this.ResumeLayout(false);
 
         }

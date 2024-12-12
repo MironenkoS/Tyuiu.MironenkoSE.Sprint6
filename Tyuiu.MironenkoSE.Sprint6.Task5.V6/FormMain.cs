@@ -10,7 +10,7 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task5.V6
 
         DataService ds = new DataService();
 
-        private string path = $@"{Directory.GetCurrentDirectory()}\InPutFileTask5V6.txt";
+        private string path = $@"C:\Users\664\source\repos\Tyuiu.MironenkoSE.Sprint6\Sprint6Task6\InPutFileTask5V6.txt";
         private void buttonDone_DDA_Click(object sender, EventArgs e)
         {
             dataGridViewResult_DDA.ColumnCount = 2;
