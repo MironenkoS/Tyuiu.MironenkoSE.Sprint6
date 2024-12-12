@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MironenkoSE.Sprint6.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MironenkoSE.Sprint6.Task5.V6.Test", "Tyuiu.MironenkoSE.Sprint6.Task5.V6.Test\Tyuiu.MironenkoSE.Sprint6.Task5.V6.Test.csproj", "{AB23EB2F-746D-43B7-99E5-69334AE56793}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MironenkoSE.Sprint6", "Tyuiu.MironenkoSE.Sprint6\Tyuiu.MironenkoSE.Sprint6.csproj", "{9F268058-E70A-4A09-8FA7-5F336F09FC02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.MironenkoSE.Sprint6", "Tyuiu.MironenkoSE.Sprint6\Tyuiu.MironenkoSE.Sprint6.csproj", "{9F268058-E70A-4A09-8FA7-5F336F09FC02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.MironenkoSE.Sprint6.Task5.V6.Lib", "Tyuiu.MironenkoSE.Sprint6.Task5.V6.Lib\Tyuiu.MironenkoSE.Sprint6.Task5.V6.Lib.csproj", "{A698E399-CAB8-413A-8A31-362AC00AD4A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{9F268058-E70A-4A09-8FA7-5F336F09FC02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F268058-E70A-4A09-8FA7-5F336F09FC02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F268058-E70A-4A09-8FA7-5F336F09FC02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A698E399-CAB8-413A-8A31-362AC00AD4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A698E399-CAB8-413A-8A31-362AC00AD4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A698E399-CAB8-413A-8A31-362AC00AD4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A698E399-CAB8-413A-8A31-362AC00AD4A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

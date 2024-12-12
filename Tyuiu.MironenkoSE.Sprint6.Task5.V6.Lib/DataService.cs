@@ -1,53 +1,43 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.MironenkoSE.Sprint6.Task5.V6.Lib
+    
+
 {
     public class DataService : ISprint6Task5V6
     {
-        public int len = 0;
-
-        public object GetMassFunction(int startStep, int stopStep)
-        {
-            throw new NotImplementedException();
-        }
-
         public double[] LoadFromDataFile(string path)
         {
-            using (StreamReader reader = new StreamReader(path))
+            try
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    len++;
-                }
-            }
+                string[] lines = File.ReadAllLines(path);
 
-            double[] numsArray = new double[len];
-            int index = 0;
-            using (StreamReader reader = new StreamReader(path))
+                double[] tempArray = new double[lines.Length];
+                int count = 0;
+
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    if (double.TryParse(lines[i], out double value))
+                    {
+                        if (value > 0)
+                        {
+                            tempArray[count] = Math.Round(value, 3);
+                            count++;
+                        }
+                    }
+                }
+
+                double[] result = new double[count];
+                for (int i = 0; i < count; i++)
+                {
+                    result[i] = tempArray[i];
+                }
+
+                return result;
+            }
+            catch (Exception ex)
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                {
-                    numsArray[index] = Convert.ToDouble(line);
-                    index++;
-
-                }
+                throw new Exception($"Ошибка при обработке файла: {ex.Message}");
             }
-            numsArray = numsArray.Where(var => var % 1 == 0).ToArray();
-
-            double[] resArray = new double[numsArray.Length];
-            for (int i = 0; i < numsArray.Length; i++)
-            {
-                if (numsArray[i].GetType().ToString() == "System.Double")
-                {
-                    resArray[i] = Math.Round(numsArray[i], 3);
-                }
-                else
-                {
-                    resArray[i] = numsArray[i];
-                }
-            }
-            return resArray;
         }
     }
 }
