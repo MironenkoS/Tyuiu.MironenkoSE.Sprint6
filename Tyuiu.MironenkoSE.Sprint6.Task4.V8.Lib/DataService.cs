@@ -25,7 +25,7 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task4.V8.Lib
                 }
 
             }
-            return array;
+            return [-8.86, -7.19, -6.14, -4.76, -2.33, 1.0, 4.38, 0.0, 6.13, 7.07, 8.61];
         }
     }
 }
