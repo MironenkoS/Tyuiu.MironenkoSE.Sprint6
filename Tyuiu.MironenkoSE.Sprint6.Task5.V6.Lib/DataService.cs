@@ -5,39 +5,45 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task5.V6.Lib
 {
     public class DataService : ISprint6Task5V6
     {
+        public int len = 0;
         public double[] LoadFromDataFile(string path)
         {
-            try
+            using (StreamReader reader = new StreamReader(path))
             {
-                string[] lines = File.ReadAllLines(path);
-
-                double[] tempArray = new double[lines.Length];
-                int count = 0;
-
-                for (int i = 0; i < lines.Length; i++)
+                string line;
+                while ((line = reader.ReadLine()) != null)
                 {
-                    if (double.TryParse(lines[i], out double value))
-                    {
-                        if (value > 0)
-                        {
-                            tempArray[count] = Math.Round(value, 3);
-                            count++;
-                        }
-                    }
+                    len++;
                 }
-
-                double[] result = new double[count];
-                for (int i = 0; i < count; i++)
-                {
-                    result[i] = tempArray[i];
-                }
-
-                return result;
             }
-            catch (Exception ex)
+
+            double[] numsArray = new double[len];
+            int index = 0;
+            using (StreamReader reader = new StreamReader(path))
             {
-                throw new Exception($"Ошибка при обработке файла: {ex.Message}");
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    numsArray[index] = Convert.ToDouble(line);
+                    index++;
+
+                }
             }
+            numsArray = numsArray.Where(var => var % 1 == 0).ToArray();
+
+            double[] resArray = new double[numsArray.Length];
+            for (int i = 0; i < numsArray.Length; i++)
+            {
+                if (numsArray[i].GetType().ToString() == "System.Double")
+                {
+                    resArray[i] = Math.Round(numsArray[i], 3);
+                }
+                else
+                {
+                    resArray[i] = numsArray[i];
+                }
+            }
+            return resArray;
         }
     }
 }
