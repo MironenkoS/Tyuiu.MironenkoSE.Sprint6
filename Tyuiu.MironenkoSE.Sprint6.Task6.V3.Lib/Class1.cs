@@ -1,7 +1,7 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint6;
 namespace Tyuiu.MironenkoSE.Sprint6.Task6.V3.Lib
 {
-    public class DataService : ISprint6Task6V3
+    public class Class1 : ISprint6Task6V3
     {
         public string CollectTextFromFile(string path)
         {
@@ -11,7 +11,7 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task6.V3.Lib
             if (!File.Exists(path))
                 throw new FileNotFoundException($"File not found at path: {path}");
 
-            try1
+            try
             {
                 var content = File.ReadAllText(path);
                 var wordsWithR = content
