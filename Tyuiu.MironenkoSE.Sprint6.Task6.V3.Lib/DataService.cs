@@ -11,7 +11,7 @@ namespace Tyuiu.MironenkoSE.Sprint6.Task6.V3.Lib
             if (!File.Exists(path))
                 throw new FileNotFoundException($"File not found at path: {path}");
 
-            try
+            try1
             {
                 var content = File.ReadAllText(path);
                 var wordsWithR = content
